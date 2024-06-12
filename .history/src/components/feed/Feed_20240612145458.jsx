@@ -1,4 +1,3 @@
-import Post from "../post/Post"
 import Share from "../share/Share"
 import "./feed.css"
 
