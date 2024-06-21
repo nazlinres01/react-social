@@ -6,7 +6,7 @@ export default function Topbar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <Link to="/">
+        <Link>
           <span className="logo">Lamasocial</span>
         </Link>
 
