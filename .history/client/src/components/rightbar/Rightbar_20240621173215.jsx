@@ -2,8 +2,7 @@ import "./rightbar.css"
 import { Users } from "../../dummyData";
 import Online from "../online/Online";
 
-export default function Rightbar({profile}) {
-
+export default function Rightbar() {
 
 
     const HomeRightbar = () => {
@@ -26,7 +25,7 @@ export default function Rightbar({profile}) {
         )
     }
 
-    const ProfileRightbar = () => {
+    const ProfileRightbar = (profile) => {
         const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
         return (
@@ -83,5 +82,5 @@ export default function Rightbar({profile}) {
                 {profile ? <ProfileRightbar /> : <HomeRightbar />}
             </div>
         </div>
-    );
+    )
 }

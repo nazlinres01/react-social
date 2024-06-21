@@ -19,7 +19,7 @@ export default function Post({ post }) {
             <div className="postWrapper">
                 <div className="postTop">
                     <div className="postTopLeft">
-                        <img src={`${PF}${Users.filter((u) => u.id === post.userId)[0].profilePicture}`} alt="" className="postProfileImg" />
+                        <img src={Users.filter((u) => u.id === post.userId)[0].profilePicture} alt="" className="postProfileImg" />
                         <span className="postUsername">
                             {Users.filter((u) => u.id === post.userId)[0].username}
                         </span>
